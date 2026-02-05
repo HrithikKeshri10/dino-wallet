@@ -1,0 +1,40 @@
+# --- Go Build Artifacts ---
+main
+# Alternative binary name based on module name
+dino-wallet
+
+# Standard Go test and build intermediates
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.txt
+
+# --- IntelliJ IDEA (Strictly relevant) ---
+# Project metadata folder
+.idea/
+# Module files often generated in the root by IntelliJ
+*.iml
+# Workspace files
+*.iws
+
+# --- Environment & Secrets ---
+# Environment variables files
+.env
+.env.local
+*.env
+
+# --- Dependencies ---
+# Vendor folder (if you choose to vendor dependencies later)
+vendor/
+
+# --- Database & Docker ---
+# The local Postgres volume defined in your docker-compose.yml
+postgres_data/
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db
